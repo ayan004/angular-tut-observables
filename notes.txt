@@ -1,0 +1,4 @@
+difference between switchMap and mergeMap:
+- In this demo app, I saw them working the same way. So raised this question
+
+- So here's the simple difference — switchMap cancels previous HTTP requests that are still in progress, while mergeMap lets all of them finish.[ In my case, I needed all requests to go through, as this is a metrics service that's supposed to log all actions that the user performs on the web page, so I used mergeMap - copied this quote from google]

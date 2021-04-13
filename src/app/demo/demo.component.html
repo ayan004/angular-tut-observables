@@ -1,0 +1,47 @@
+<!-- <p>demo works!</p> -->
+
+<ul>
+  <li>tulu pump</li>
+  <li>bhulu pump</li>
+  <li *ngFor="let book of allBooks$ | async">
+    Id: {{ book.id }}, Name: {{ book.name }}, Category: {{ book.category }},
+    Title: {{ book.title }}
+  </li>
+</ul>
+
+<div *ngIf="favBook$ | async as book; else loading">
+  Id: {{ book.id }}, Name: {{ book.name }}, Category: {{ book.category }}
+</div>
+<ng-template #loading>
+  <img src="assets/images/ispinner.jpg" />
+</ng-template>
+
+<div *ngIf="favBookNameO$ | async as bookName; else loading">
+  Name: {{ bookName }}
+</div>
+
+<div *ngIf="favBookName as bookName; else loading">Name: {{ bookName }}</div>
+
+<ul>
+  <li *ngFor="let book of myAllfavBooks$ | async">
+    Id: {{ book.id }}, Name: {{ book.name }}, Category: {{ book.category }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let book of allFavBooks">
+    Id: {{ book.id }}, Name: {{ book.name }}, Category: {{ book.category }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let book of similarBooks$ | async">
+    Id: {{ book.id }}, Name: {{ book.name }}, Category: {{ book.category }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let book of booksFromLocalStore$ | async">
+    Id: {{ book.id }}, Name: {{ book.name }}, Category: {{ book.category }}
+  </li>
+</ul>

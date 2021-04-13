@@ -1,0 +1,15 @@
+MENTION WHAT ARE THE TOPICS/KEYWORDS THAT U HAVE LEARNED IN THIS TUTORIAL:
+- Use of Observables
+- Use of Observables class with async pipe in template
+- map, with pipe
+- mergeMap, with pipe
+    - with this you can create a list of functions to call one after the other. One function can use the data fetched by another function. 
+- switchMap, with pipe
+    - same as mergeMap, with the difference that switchMap cancels all other HTTP requests that is running at that point of time
+- subscribe
+    - works same as observables, with a difference that the data fetched with subscribe cab be used in .ts file 
+- in-memory-web-api
+    - creates a mock backend
+    - here I am just creating the backend URL, not using it 
+
+If you catch data with observables, then you have to use it directly in HTML file with async pipe.

@@ -1,0 +1,53 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "green_goblin",
+      "author": "dip",
+      "name": "chulu",
+      "category": "horror"
+    },
+    {
+      "id": 2,
+      "title": "astrix",
+      "author": "sam",
+      "name": "rini",
+      "category": "funny"
+    },
+    {
+      "id": 3,
+      "title": "nimo",
+      "author": "rij",
+      "name": "pechu",
+      "category": "horror"
+    },
+    {
+      "id": 4,
+      "title": "chiku",
+      "author": "brij",
+      "name": "tili",
+      "category": "funny"
+    },
+    {
+      "id": 5,
+      "title": "pikachu",
+      "author": "srijan",
+      "name": "srinta",
+      "category": "horror"
+    },
+    {
+      "id": 6,
+      "title": "puri",
+      "author": "sabji",
+      "name": "tubans",
+      "category": "horror"
+    },
+    {
+      "id": 7,
+      "title": "kacha",
+      "author": "paka",
+      "name": "veeku",
+      "category": "horror"
+    }
+  ]
+}
